@@ -1,0 +1,592 @@
+<html lang="en" data-lt-installed="true"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polas Asados</title>
+  <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Link to File CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style>:root{--swal2-outline: 0 0 0 3px rgba(100, 150, 200, 0.5);--swal2-container-padding: 0.625em;--swal2-backdrop: rgba(0, 0, 0, 0.4);--swal2-backdrop-transition: background-color 0.15s;--swal2-width: 32em;--swal2-padding: 0 0 1.25em;--swal2-border: none;--swal2-border-radius: 0.3125rem;--swal2-background: white;--swal2-color: #545454;--swal2-show-animation: swal2-show 0.3s;--swal2-hide-animation: swal2-hide 0.15s forwards;--swal2-icon-zoom: 1;--swal2-icon-animations: true;--swal2-title-padding: 0.8em 1em 0;--swal2-html-container-padding: 1em 1.6em 0.3em;--swal2-input-border: 1px solid #d9d9d9;--swal2-input-border-radius: 0.1875em;--swal2-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;--swal2-input-background: transparent;--swal2-input-transition: border-color 0.2s, box-shadow 0.2s;--swal2-input-hover-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;--swal2-input-focus-border: 1px solid #b4dbed;--swal2-input-focus-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);--swal2-progress-step-background: #add8e6;--swal2-validation-message-background: #f0f0f0;--swal2-validation-message-color: #666;--swal2-footer-border-color: #eee;--swal2-footer-background: transparent;--swal2-footer-color: inherit;--swal2-timer-progress-bar-background: rgba(0, 0, 0, 0.3);--swal2-close-button-position: initial;--swal2-close-button-inset: auto;--swal2-close-button-font-size: 2.5em;--swal2-close-button-color: #ccc;--swal2-close-button-transition: color 0.2s, box-shadow 0.2s;--swal2-close-button-outline: initial;--swal2-close-button-box-shadow: inset 0 0 0 3px transparent;--swal2-close-button-focus-box-shadow: inset var(--swal2-outline);--swal2-close-button-hover-transform: none;--swal2-actions-justify-content: center;--swal2-actions-width: auto;--swal2-actions-margin: 1.25em auto 0;--swal2-actions-padding: 0;--swal2-actions-border-radius: 0;--swal2-actions-background: transparent;--swal2-action-button-transition: background-color 0.2s, box-shadow 0.2s;--swal2-action-button-hover: black 10%;--swal2-action-button-active: black 10%;--swal2-confirm-button-box-shadow: none;--swal2-confirm-button-border-radius: 0.25em;--swal2-confirm-button-background-color: #7066e0;--swal2-confirm-button-color: #fff;--swal2-deny-button-box-shadow: none;--swal2-deny-button-border-radius: 0.25em;--swal2-deny-button-background-color: #dc3741;--swal2-deny-button-color: #fff;--swal2-cancel-button-box-shadow: none;--swal2-cancel-button-border-radius: 0.25em;--swal2-cancel-button-background-color: #6e7881;--swal2-cancel-button-color: #fff;--swal2-toast-show-animation: swal2-toast-show 0.5s;--swal2-toast-hide-animation: swal2-toast-hide 0.1s forwards;--swal2-toast-border: none;--swal2-toast-box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 1px 2px hsl(0deg 0% 0% / 0.075), 1px 2px 4px hsl(0deg 0% 0% / 0.075), 1px 3px 8px hsl(0deg 0% 0% / 0.075), 2px 4px 16px hsl(0deg 0% 0% / 0.075)}[data-swal2-theme=dark]{--swal2-dark-theme-black: #19191a;--swal2-dark-theme-white: #e1e1e1;--swal2-background: var(--swal2-dark-theme-black);--swal2-color: var(--swal2-dark-theme-white);--swal2-footer-border-color: #555;--swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);--swal2-validation-message-background: color-mix( in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10% );--swal2-validation-message-color: var(--swal2-dark-theme-white);--swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7)}@media(prefers-color-scheme: dark){[data-swal2-theme=auto]{--swal2-dark-theme-black: #19191a;--swal2-dark-theme-white: #e1e1e1;--swal2-background: var(--swal2-dark-theme-black);--swal2-color: var(--swal2-dark-theme-white);--swal2-footer-border-color: #555;--swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);--swal2-validation-message-background: color-mix( in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10% );--swal2-validation-message-color: var(--swal2-dark-theme-white);--swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7)}}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto !important}body.swal2-no-backdrop .swal2-container{background-color:rgba(0,0,0,0) !important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:auto}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px var(--swal2-backdrop)}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:rgba(0,0,0,0);pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{inset:0 auto auto 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{inset:0 0 auto auto}body.swal2-toast-shown .swal2-container.swal2-top-start,body.swal2-toast-shown .swal2-container.swal2-top-left{inset:0 auto auto 0}body.swal2-toast-shown .swal2-container.swal2-center-start,body.swal2-toast-shown .swal2-container.swal2-center-left{inset:50% auto auto 0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{inset:50% auto auto 50%;transform:translate(-50%, -50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{inset:50% 0 auto auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-start,body.swal2-toast-shown .swal2-container.swal2-bottom-left{inset:auto auto 0 0}body.swal2-toast-shown .swal2-container.swal2-bottom{inset:auto auto 0 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{inset:auto 0 0 auto}@media print{body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown){overflow-y:scroll !important}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown) .swal2-container{position:static !important}}div:where(.swal2-container){display:grid;position:fixed;z-index:1060;inset:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);height:100%;padding:var(--swal2-container-padding);overflow-x:hidden;transition:var(--swal2-backdrop-transition);-webkit-overflow-scrolling:touch}div:where(.swal2-container).swal2-backdrop-show,div:where(.swal2-container).swal2-noanimation{background:var(--swal2-backdrop)}div:where(.swal2-container).swal2-backdrop-hide{background:rgba(0,0,0,0) !important}div:where(.swal2-container).swal2-top-start,div:where(.swal2-container).swal2-center-start,div:where(.swal2-container).swal2-bottom-start{grid-template-columns:minmax(0, 1fr) auto auto}div:where(.swal2-container).swal2-top,div:where(.swal2-container).swal2-center,div:where(.swal2-container).swal2-bottom{grid-template-columns:auto minmax(0, 1fr) auto}div:where(.swal2-container).swal2-top-end,div:where(.swal2-container).swal2-center-end,div:where(.swal2-container).swal2-bottom-end{grid-template-columns:auto auto minmax(0, 1fr)}div:where(.swal2-container).swal2-top-start>.swal2-popup{align-self:start}div:where(.swal2-container).swal2-top>.swal2-popup{grid-column:2;place-self:start center}div:where(.swal2-container).swal2-top-end>.swal2-popup,div:where(.swal2-container).swal2-top-right>.swal2-popup{grid-column:3;place-self:start end}div:where(.swal2-container).swal2-center-start>.swal2-popup,div:where(.swal2-container).swal2-center-left>.swal2-popup{grid-row:2;align-self:center}div:where(.swal2-container).swal2-center>.swal2-popup{grid-column:2;grid-row:2;place-self:center center}div:where(.swal2-container).swal2-center-end>.swal2-popup,div:where(.swal2-container).swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;place-self:center end}div:where(.swal2-container).swal2-bottom-start>.swal2-popup,div:where(.swal2-container).swal2-bottom-left>.swal2-popup{grid-column:1;grid-row:3;align-self:end}div:where(.swal2-container).swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;place-self:end center}div:where(.swal2-container).swal2-bottom-end>.swal2-popup,div:where(.swal2-container).swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;place-self:end end}div:where(.swal2-container).swal2-grow-row>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-column:1/4;width:100%}div:where(.swal2-container).swal2-grow-column>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}div:where(.swal2-container).swal2-no-transition{transition:none !important}div:where(.swal2-container)[popover]{width:auto;border:0}div:where(.swal2-container) div:where(.swal2-popup){display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0, 100%);width:var(--swal2-width);max-width:100%;padding:var(--swal2-padding);border:var(--swal2-border);border-radius:var(--swal2-border-radius);background:var(--swal2-background);color:var(--swal2-color);font-family:inherit;font-size:1rem;container-name:swal2-popup}div:where(.swal2-container) div:where(.swal2-popup):focus{outline:none}div:where(.swal2-container) div:where(.swal2-popup).swal2-loading{overflow-y:hidden}div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable{cursor:grab}div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable div:where(.swal2-icon){cursor:grab}div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging{cursor:grabbing}div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging div:where(.swal2-icon){cursor:grabbing}div:where(.swal2-container) h2:where(.swal2-title){position:relative;max-width:100%;margin:0;padding:var(--swal2-title-padding);color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;overflow-wrap:break-word;cursor:initial}div:where(.swal2-container) div:where(.swal2-actions){display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:var(--swal2-actions-justify-content);width:var(--swal2-actions-width);margin:var(--swal2-actions-margin);padding:var(--swal2-actions-padding);border-radius:var(--swal2-actions-border-radius);background:var(--swal2-actions-background)}div:where(.swal2-container) div:where(.swal2-loader){display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 rgba(0,0,0,0) #2778c4 rgba(0,0,0,0)}div:where(.swal2-container) button:where(.swal2-styled){margin:.3125em;padding:.625em 1.1em;transition:var(--swal2-action-button-transition);border:none;box-shadow:0 0 0 3px rgba(0,0,0,0);font-weight:500}div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){cursor:pointer}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){border-radius:var(--swal2-confirm-button-border-radius);background:initial;background-color:var(--swal2-confirm-button-background-color);box-shadow:var(--swal2-confirm-button-box-shadow);color:var(--swal2-confirm-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):hover{background-color:color-mix(in srgb, var(--swal2-confirm-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):active{background-color:color-mix(in srgb, var(--swal2-confirm-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny){border-radius:var(--swal2-deny-button-border-radius);background:initial;background-color:var(--swal2-deny-button-background-color);box-shadow:var(--swal2-deny-button-box-shadow);color:var(--swal2-deny-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):hover{background-color:color-mix(in srgb, var(--swal2-deny-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):active{background-color:color-mix(in srgb, var(--swal2-deny-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel){border-radius:var(--swal2-cancel-button-border-radius);background:initial;background-color:var(--swal2-cancel-button-background-color);box-shadow:var(--swal2-cancel-button-box-shadow);color:var(--swal2-cancel-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):hover{background-color:color-mix(in srgb, var(--swal2-cancel-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):active{background-color:color-mix(in srgb, var(--swal2-cancel-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):focus-visible{outline:none;box-shadow:var(--swal2-action-button-focus-box-shadow)}div:where(.swal2-container) button:where(.swal2-styled)[disabled]:not(.swal2-loading){opacity:.4}div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-footer){margin:1em 0 0;padding:1em 1em 0;border-top:1px solid var(--swal2-footer-border-color);background:var(--swal2-footer-background);color:var(--swal2-footer-color);font-size:1em;text-align:center;cursor:initial}div:where(.swal2-container) .swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto !important;overflow:hidden;border-bottom-right-radius:var(--swal2-border-radius);border-bottom-left-radius:var(--swal2-border-radius)}div:where(.swal2-container) div:where(.swal2-timer-progress-bar){width:100%;height:.25em;background:var(--swal2-timer-progress-bar-background)}div:where(.swal2-container) img:where(.swal2-image){max-width:100%;margin:2em auto 1em;cursor:initial}div:where(.swal2-container) button:where(.swal2-close){position:var(--swal2-close-button-position);inset:var(--swal2-close-button-inset);z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:var(--swal2-close-button-transition);border:none;border-radius:var(--swal2-border-radius);outline:var(--swal2-close-button-outline);background:rgba(0,0,0,0);color:var(--swal2-close-button-color);font-family:monospace;font-size:var(--swal2-close-button-font-size);cursor:pointer;justify-self:end}div:where(.swal2-container) button:where(.swal2-close):hover{transform:var(--swal2-close-button-hover-transform);background:rgba(0,0,0,0);color:#f27474}div:where(.swal2-container) button:where(.swal2-close):focus-visible{outline:none;box-shadow:var(--swal2-close-button-focus-box-shadow)}div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-html-container){z-index:1;justify-content:center;margin:0;padding:var(--swal2-html-container-padding);overflow:auto;color:inherit;font-size:1.125em;font-weight:normal;line-height:normal;text-align:center;overflow-wrap:break-word;word-break:break-word;cursor:initial}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea),div:where(.swal2-container) select:where(.swal2-select),div:where(.swal2-container) div:where(.swal2-radio),div:where(.swal2-container) label:where(.swal2-checkbox){margin:1em 2em 3px}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea){box-sizing:border-box;width:auto;transition:var(--swal2-input-transition);border:var(--swal2-input-border);border-radius:var(--swal2-input-border-radius);background:var(--swal2-input-background);box-shadow:var(--swal2-input-box-shadow);color:inherit;font-size:1.125em}div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror{border-color:#f27474 !important;box-shadow:0 0 2px #f27474 !important}div:where(.swal2-container) input:where(.swal2-input):hover,div:where(.swal2-container) input:where(.swal2-file):hover,div:where(.swal2-container) textarea:where(.swal2-textarea):hover{box-shadow:var(--swal2-input-hover-box-shadow)}div:where(.swal2-container) input:where(.swal2-input):focus,div:where(.swal2-container) input:where(.swal2-file):focus,div:where(.swal2-container) textarea:where(.swal2-textarea):focus{border:var(--swal2-input-focus-border);outline:none;box-shadow:var(--swal2-input-focus-box-shadow)}div:where(.swal2-container) input:where(.swal2-input)::placeholder,div:where(.swal2-container) input:where(.swal2-file)::placeholder,div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder{color:#ccc}div:where(.swal2-container) .swal2-range{margin:1em 2em 3px;background:var(--swal2-background)}div:where(.swal2-container) .swal2-range input{width:80%}div:where(.swal2-container) .swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}div:where(.swal2-container) .swal2-range input,div:where(.swal2-container) .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}div:where(.swal2-container) .swal2-input{height:2.625em;padding:0 .75em}div:where(.swal2-container) .swal2-file{width:75%;margin-right:auto;margin-left:auto;background:var(--swal2-input-background);font-size:1.125em}div:where(.swal2-container) .swal2-textarea{height:6.75em;padding:.75em}div:where(.swal2-container) .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:var(--swal2-input-background);color:inherit;font-size:1.125em}div:where(.swal2-container) .swal2-radio,div:where(.swal2-container) .swal2-checkbox{align-items:center;justify-content:center;background:var(--swal2-background);color:inherit}div:where(.swal2-container) .swal2-radio label,div:where(.swal2-container) .swal2-checkbox label{margin:0 .6em;font-size:1.125em}div:where(.swal2-container) .swal2-radio input,div:where(.swal2-container) .swal2-checkbox input{flex-shrink:0;margin:0 .4em}div:where(.swal2-container) label:where(.swal2-input-label){display:flex;justify-content:center;margin:1em auto 0}div:where(.swal2-container) div:where(.swal2-validation-message){align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:var(--swal2-validation-message-background);color:var(--swal2-validation-message-color);font-size:1em;font-weight:300}div:where(.swal2-container) div:where(.swal2-validation-message)::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}div:where(.swal2-container) .swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:rgba(0,0,0,0);font-weight:600}div:where(.swal2-container) .swal2-progress-steps li{display:inline-block;position:relative}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:var(--swal2-progress-step-background);color:#fff}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:var(--swal2-progress-step-background)}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}div:where(.swal2-icon){position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;zoom:var(--swal2-icon-zoom);border:.25em solid rgba(0,0,0,0);border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;user-select:none}div:where(.swal2-icon) .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}div:where(.swal2-icon).swal2-error{border-color:#f27474;color:#f27474}div:where(.swal2-icon).swal2-error .swal2-x-mark{position:relative;flex-grow:1}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-error.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark{animation:swal2-animate-error-x-mark .5s}}div:where(.swal2-icon).swal2-warning{border-color:#f8bb86;color:#f8bb86}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-warning.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .5s}}div:where(.swal2-icon).swal2-info{border-color:#3fc3ee;color:#3fc3ee}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-info.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .8s}}div:where(.swal2-icon).swal2-question{border-color:#87adbd;color:#87adbd}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-question.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content{animation:swal2-animate-question-mark .8s}}div:where(.swal2-icon).swal2-success{border-color:#a5dc86;color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;border-radius:50%}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}div:where(.swal2-icon).swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-0.25em;left:-0.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}div:where(.swal2-icon).swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-animate-success-line-tip .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-animate-success-line-long .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right{animation:swal2-rotate-success-circular-line 4.25s ease-in}}[class^=swal2]{-webkit-tap-highlight-color:rgba(0,0,0,0)}.swal2-show{animation:var(--swal2-show-animation)}.swal2-hide{animation:var(--swal2-hide-animation)}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}.swal2-toast{box-sizing:border-box;grid-column:1/4 !important;grid-row:1/4 !important;grid-template-columns:min-content auto min-content;padding:1em;overflow-y:hidden;border:var(--swal2-toast-border);background:var(--swal2-background);box-shadow:var(--swal2-toast-box-shadow);pointer-events:auto}.swal2-toast>*{grid-column:2}.swal2-toast h2:where(.swal2-title){margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-toast .swal2-loading{justify-content:center}.swal2-toast input:where(.swal2-input){height:2em;margin:.5em;font-size:1em}.swal2-toast .swal2-validation-message{font-size:1em}.swal2-toast div:where(.swal2-footer){margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-toast button:where(.swal2-close){grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-toast div:where(.swal2-html-container){margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-toast div:where(.swal2-html-container):empty{padding:0}.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:bold}.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-toast div:where(.swal2-actions){justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-toast button:where(.swal2-styled){margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;border-radius:50%}.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.8em;left:-0.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}@container swal2-popup style(--swal2-icon-animations:true){.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-toast-animate-success-line-tip .75s}.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-toast-animate-success-line-long .75s}}.swal2-toast.swal2-show{animation:var(--swal2-toast-show-animation)}.swal2-toast.swal2-hide{animation:var(--swal2-toast-hide-animation)}@keyframes swal2-show{0%{transform:translate3d(0, -50px, 0) scale(0.9);opacity:0}100%{transform:translate3d(0, 0, 0) scale(1);opacity:1}}@keyframes swal2-hide{0%{transform:translate3d(0, 0, 0) scale(1);opacity:1}100%{transform:translate3d(0, -50px, 0) scale(0.9);opacity:0}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-0.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(0.4);opacity:0}50%{margin-top:1.625em;transform:scale(0.4);opacity:0}80%{margin-top:-0.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0deg);opacity:1}}@keyframes swal2-rotate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-toast-show{0%{transform:translateY(-0.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(0.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0deg)}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-0.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}</style></head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1282.0" data-gr-ext-installed="">
+
+  <!--header section start -->
+  <header class="header aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+    <div class="logo">
+      <figure class="logo--img">
+        <a href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmlheY9yC3Pquv-0EefQ9njRCHoP8e-YrSQ&s " alt="">
+        </a>
+      </figure>
+      <p>Gadel</p>
+    </div>
+
+    <nav class="navbar">
+      <a class="navbar--link active" href="#home" data-page="home">Home</a>
+      <a class="navbar--link" href="#about" data-page="about">About</a>
+      <a class="navbar--link" href="#test" data-page="site">testimoniols</a>
+      <a class="navbar--link" href="#services" data-page="services">Services</a>
+      <a class="navbar--link" href="#menu" data-page="menu">Menu</a>
+      <a class="navbar--link" href="#contact" data-page="contact">Contact</a>
+      <i class="ri-close-circle-fill" id="close"></i>
+    </nav>
+
+    <div class="icons">
+      <div class="ri-moon-fill" id="mode-switch"></div>
+      <div class="cart">
+        <div class=" fas fa-shopping-cart" id="cart-btn"></div>
+
+      </div>
+      <div class=" fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="cart-items-container">
+      <div class="layer1"></div>
+      <div class="layer2"></div>
+      <i class="ri-close-circle-fill" id="delete"></i>
+      <h2 class="cart-title">Your Cart:</h2>
+      <div class="big-div">
+        <ul id="cart-items"></ul>
+
+        <div class="total-ex">
+          <h2>Cart Total</h2>
+          <div class="div-1">
+            <h3>Price</h3>
+            <p class="price-items"></p>
+          </div>
+          <div class="div-2">
+            <h3>Delivery</h3>
+            <p>5$</p>
+          </div>
+          <button class="buy">Buy To Checkout</button>
+        </div>
+      </div>
+      
+
+      <div class="delivery-info">
+        <i class="ri-close-circle-fill" id="delete2"></i>
+          
+          <div class="delivery-info__big">
+            <div class="d-i-b-right">
+              <h2>Delivery Information</h2>
+              <div class="data">
+                <fieldset class="row-1">
+                  <input type="text" placeholder="First Name">
+                  <input type="text" placeholder="Last Name">
+                </fieldset>
+                <fieldset class="row-2">
+                    <input type="text" placeholder="Email Address">
+                </fieldset>
+                <fieldset class="row-3">
+                    <input type="text" placeholder="Street">
+                </fieldset>
+                <fieldset class="row-4">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State">
+                </fieldset>
+                <fieldset class="row-5">
+                    <input type="text" placeholder="Zip code">
+                    <input type="text" placeholder="Country">
+                </fieldset>
+                <fieldset class="row-6">
+                  <input type="text" placeholder="phone">
+              </fieldset>
+              </div>
+            </div>
+
+            <div class="d-i-b-left">
+              <h2>Cart Total</h2>
+              <div class="div-1">
+                <h3>Price</h3>
+                <p class="price-item-final"></p>
+              </div>
+              <div class="div-2">
+                <h3>Delivery</h3>
+                <p>5$</p>
+              </div>
+              <button class="push-money">Proceed To Payment</button>
+            </div>
+          </div>
+
+     
+      </div>
+    </div>
+  </header>
+  <!--header section end -->
+
+  <!-- Home start -->
+  <section class="home" data-index="0" id="home">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="section-title main-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">Cure Hun<span class="rare">ger</span></h1>
+      <p class="section-para aos-init aos-animate" id="home-para" data-aos="fade-up" data-aos-duration="1500">To provide support for my
+        family and ensure a quality education for my children. This motivation drives me to wake up early on Saturdays
+        and Sundays to start preparing food and chickens for my business.</p>
+      <button class="section-btn aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        Check Out
+        <i class="ri-arrow-right-line"></i>
+      </button>
+
+
+    </div>
+    <div class="informations aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+      <fieldset>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" name="email" id="email" class="email">
+      </fieldset>
+      <fieldset>
+        <label for="time">Time:</label>
+        <input type="number" placeholder="The time you want" name="time" id="time" class="time">
+      </fieldset>
+      <fieldset>
+        <label for="qa">Quantity:</label>
+        <input type="number" placeholder="1/2/3/4" name="qa" class="qa">
+      </fieldset>
+      <button onclick="reg()" class="submit">Submit</button>
+    </div>
+  <div class="image-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4OcTwtNZJtp6y8QY5TwulzzahHuYTH9iwQ&s" alt="Image 1" class="background-image" style="opacity: 0; transition: opacity 1s;"><img src="data:image/jpeg;base64,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" alt="Image 2" class="background-image" style="opacity: 1; transition: opacity 1s;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbO1wORvB5nohViC2E7o6ziITzZ2hc9wARgg&s" alt="Image 3" class="background-image" style="opacity: 0; transition: opacity 1s;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFUQWUr_5SKpmX24mZIWpQAYKj5iCJ9p7fA&s" alt="Image 4" class="background-image" style="opacity: 0; transition: opacity 1s;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNgYQNi5rOEQDlxu5sbG8yFSg28XZxBJ_KQ&s" alt="Image 5" class="background-image" style="opacity: 0; transition: opacity 1s;"></div><button class="prev-arrow aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">&lt;</button><button class="next-arrow aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">&gt;</button></section>
+  <!-- Home End -->
+
+  <!-- About Start -->
+  <section id="about" data-index="1" class="about">
+    <figure class="about--img aos-init" data-aos="fade-right" data-aos-duration="1700">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8LCKh0p1ktR3AyzmQ0MJiL6K4FBETIeMlQg&s" class="structure">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ayFBtyJ07BlJ3SNanenrbvXzeQY4P4x-LA&s " alt="" class="design">
+      <img src=" https://anas92876.github.io/pollas_asodos/Images/about.png" alt="" class=" d-2">
+
+    </figure>
+    <div class="about--content aos-init" data-aos="fade-left" data-aos-duration="1700">
+      <h2>Polas Asados</h2>
+      <h3>MOST FAMOUS BEST SELLER SINCE 1969  </h3>
+      <p>CITO is made out off whitehouse bread filled with fresh milk from our farms and its made of two pieces of chicken and some babrica and some secrete matirials from our kitchen  
+"</p>
+      <button class="about--content__btn btn">Learn More</button>
+
+      <div class="modal-container">
+        <div class="modal">
+          <h1 class="modal-title">More Information</h1>
+          <p class="modal--para">
+            This dedication to his family became the cornerstone of Gabriel's work ethic. Every Saturday and Sunday, he
+            rises early to begin the meticulous preparation of food and chickens for his customers. His commitment to
+            quality and family values quickly resonated with the community, and over the past five years, his takeout
+            restaurant has flourished
+          </p>
+          <i class="ri-close-circle-fill" id="closeTrigger"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+
+  <!-- Testimoniols Start -->
+  <section class="site" id="test" data-index="2">
+    <div class="test-container">
+      <div class="testi">
+        <div class="head">
+          <h3 data-aos="fade-up" data-aos-duration="1800" class="aos-init">Testimonials.</h3>
+          <p data-aos="fade-up" data-aos-duration="1500" class="aos-init">See what people are saying..</p>
+        </div>
+        <div class="body swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden">
+          <ul class="swiper-wrapper" id="swiper-wrapper-14d3e5259c32b2ef" aria-live="polite" style="height: 672px;">
+            <li class="swiper-slide swiper-slide-active" style="width: 54px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVozfKbmVyAMouubo5YtNjZzYPPbDTlJO9wg&s ">
+                </div>
+                <div class="aside aos-init" data-aos="fade-down" data-aos-duration="1000">
+                  <p class="aside--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est
+                    voluptatum culpa, quas nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4lMhU777zazX9BN9XQ1HZIFRDHVdu6BvVA&s                    <h4 data-aos="fade-left" data-aos-duration="1700" class="aos-init">Ahmad Malik</h4>
+                    <p data-aos="fade-left" data-aos-duration="1700" class="aos-init">Graphic Designer</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-next" style="width: 54px;" role="group" aria-label="2 / 3" data-swiper-slide-index="1">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2t-t6bfpYvmg_mXDe6J05Xi144bs9Fk2gA&s ">
+                </div>
+                <div class="aside">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est voluptatum culpa, quas
+                    nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">
+                    <h4>Wlaa homsi</h4>
+                    <p>teacher</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide" role="group" aria-label="3 / 3" style="width: 54px;" data-swiper-slide-index="2">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpQ12eB0dlC8tV-Nnm6LGwRzpPgfEgyMnjA&s ">
+                </div>
+                <div class="aside">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est voluptatum culpa, quas
+                    nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">
+                    <h4>Anas toel</h4>
+                    <p>Doctor</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal aos-init" data-aos="fade-up" data-aos-duration="1700"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev aos-init" data-aos="fade-left" data-aos-duration="1700" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-14d3e5259c32b2ef"></div>
+          <div class="swiper-button-next aos-init" data-aos="fade-right" data-aos-duration="1700" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-14d3e5259c32b2ef"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoniols End -->
+
+
+
+  <!-- History Start -->
+  <section id="services" data-index="3" class="services">
+    <div class="blog">
+      <div class="services--container">
+        <i class="fa-solid fa-utensils"></i>
+        <span class="num" data-val="400">000</span>
+        <span class="text">Meals Delivered</span>
+      </div>
+
+      <div class="services--container">
+        <i class="fa-solid fa-smile-beam"></i>
+        <span class="num" data-val="378">000</span>
+        <span class="text">Happy Customers</span>
+      </div>
+
+      <div class="services--container">
+        <i class="fa-solid fa-list"></i>
+        <span class="num" data-val="245">000</span>
+        <span class="text">Menu Items</span>
+      </div>
+      <div class="services--container">
+        <i class="fa-solid fa-utensils"></i>
+        <span class="num" data-val="200">000</span>
+        <span class="text">Five Stars</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- History End -->
+
+
+  <!-- Menu Start -->
+  <section class="menu" id="menu" data-index="4">
+    <div class="menu--head">
+      <h2 data-aos="fade-up" data-aos-duration="2000" class="aos-init">Our <span>Menu</span> </h2>
+      <p data-aos="fade-up" data-aos-duration="1500" class="aos-init">We have many discounts especially for hungries</p>
+    </div>
+
+    <div class="menu--container">
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8AqCnKu1P0srzCyTKTiGEhIuMJmYLquFng&s " alt="">
+          <button data-name="Grilled Chicken" data-img="./menu/img-1.jpeg" data-price="160$" class="mybtn">Add To
+            Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">grilled Chicken</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>160$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGH7Kv5PdVlbVToL-Ca6Xd5UzinCjSrx7nA&s " alt="">
+          <button data-name="1/2 Grilled Chicken" data-img="./menu/img-2.jpg" data-price="90$" class="mybtn">Add To
+            Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">1/2 Grilled Chicken</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>90$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7r8XPEaJF4Kl8hG5VR1nmTYqKIvKAMNXSSw&s " alt="">
+          <button data-name="Sausages" data-img="./menu/img-3.jpeg" data-price="16$" class="mybtn">Add To Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">Sausages</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>16$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScguNqj-dFUXA8ycD5R0k_rfj261RnvDfBAQ&s " alt="">
+          <button data-name="2 Grilled Chicken" data-img="./menu/img-4.jpg" data-price="350$" class="mybtn">Add To
+            Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">2 grilled Chicken</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>350$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vCePQzgDSyHW1seXqrA-fvds34_IK8P2aQ&s " alt="">
+          <button data-name="cut Chicken" data-img="./menu/img-5.jpg" data-price="150$" class="mybtn">Add To
+            Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name "> cut Chicken </h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>150$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_H2wHsEH8W7-3wG3N1kF24CMuTkWkmQ6FmA&s" alt="">
+          <button data-name="..With Potatos" data-img="./menu/img-6.jpg" data-price="180$" class="mybtn">Add To
+            Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">With potatos</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>180$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6_1-BRgrgeRhQAZDbAZ_szQcdxzhOD_SVQ&s " alt="">
+          <button data-name="With all" data-img="./menu/img-7.jpg" data-price="300$" class="mybtn">Add To Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3 class="cart-name">with all</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>300$</span>
+        </div>
+      </div>
+      <div class="menu--container__card aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+        <figure class="menu--container__card--img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNioXe45rwqbcqJ6yZTvjhQBNTJkRsML6jDg&s " alt="">
+          <button data-name="Grilled Chicken with soos" data-img="./menu/img-8.jpg" data-price="180$" class="mybtn">Add
+            To Cart</button>
+        </figure>
+
+        <div class="menu--container__card--content">
+          <div class="row">
+            <h3>Grilled Chicken</h3>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <p>If you are hungry eact chicken</p>
+          <span>180$</span>
+        </div>
+      </div>
+
+
+
+    </div>
+    
+  </section>
+
+  <!-- Menu End -->
+
+  <!-- Contact Start -->
+  <section class="contact" id="contact" data-index="5">
+    <div class="contact--container">
+      <figure class="contact--container__img aos-init" data-aos="fade-left" data-aos-duration="2000">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3zFNdn5G4zrd2MtzjpPbJTxNpogZzUBowA&s " alt="">
+      </figure>
+      <fieldset class="form aos-init" data-aos="fade-right" data-aos-duration="2000">
+        <h2>contact <span>Us</span></h2>
+        <form action="">
+          <input type="text" placeholder="Enter Your Name">
+          <input type="email" placeholder="Enter Your Email">
+          <input type="password" placeholder="Enter Your Password">
+          <input type="submit" value="Submit">
+
+          <p>Sign Up with <a href="#">Google</a> </p>
+        </form>
+      </fieldset>
+    </div>
+  </section>
+  <!-- Contact end -->
+
+
+  <!-- Footer Start -->
+  <footer data-aos="fade-up" data-aos-duration="2000" class="aos-init">
+    <div class="company aos-init" data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Company</div>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Altifate Program</a></li>
+      </ul>
+    </div>
+    <div class="helping aos-init" data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Get Help</div>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Order Status</a></li>
+      </ul>
+    </div>
+    <div class="shop aos-init" data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Online Food</div>
+      <ul>
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Sausages</a></li>
+        <li><a href="#">Potatos</a></li>
+        <li><a href="#">grilling</a></li>
+      </ul>
+    </div>
+
+    <div class="follow aos-init" data-aos="fade-up" data-aos-duration="2000">
+      <h2 class="title">Follow Us</h2>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="function.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+
+    );
+  </script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
